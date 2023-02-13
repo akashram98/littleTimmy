@@ -108,11 +108,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1036043363377421009}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc205a5ed76556646a81918f67ad8cc0, type: 3}
+  m_Script: {fileID: 11500000, guid: e0773a0c01f19ac42a207e3eebd26ef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonP: {fileID: 1036043363834537013}
-  enemyObj: {fileID: 0}
+  spikeTrap: {fileID: 0}
+  buttonParent: {fileID: 1036043363834537013}
 --- !u!1 &1036043363834537013
 GameObject:
   m_ObjectHideFlags: 0

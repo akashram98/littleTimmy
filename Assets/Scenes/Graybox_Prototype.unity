@@ -2837,6 +2837,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309222054}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1321614911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1321614913}
+  - component: {fileID: 1321614912}
+  m_Layer: 0
+  m_Name: Get_Mateiral
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1321614912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321614911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40545b17b4aa4c942912bc36e5b7a7bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpikeTrap_launcher: {fileID: 2100000, guid: c0f608fae6f7928478b1c85c6afe5fe4, type: 2}
+  SpikeTrap_spikes: {fileID: 2100000, guid: 1092fd511d3088f438afba70868cd55b, type: 2}
+  TrapDoor: {fileID: 2100000, guid: 3478848e443a1ef47b39f5382d19ac2f, type: 2}
+  FreezeTrap: {fileID: 2100000, guid: dc4eaccf21fa9f34c81509116ee12dab, type: 2}
+  NoiseTrap: {fileID: 2100000, guid: a7fad3b714f15c74ab30e979c6e2f4ce, type: 2}
+--- !u!4 &1321614913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321614911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.793319, y: 7.31553, z: -5.491274}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1332258066 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5634189982058141413, guid: 1e1b7965d05f6884397fadeb61e5a6ba, type: 3}
@@ -3267,6 +3316,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7738061307079428656, guid: 92fa74851adc3488db1b206ec612b293, type: 3}
   m_PrefabInstance: {fileID: 7738061306508339962}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1702201037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702201030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264f779587e9e644ca34302eed1a49e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getmaterial: {fileID: 1321614912}
+  Parent: {fileID: 0}
 --- !u!1 &1715967901
 GameObject:
   m_ObjectHideFlags: 0
@@ -4501,11 +4564,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5167205520529337871, guid: 8d858fd9d27198b4c90a9bf3293a2701, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -1e-45
+      value: 3e-45
       objectReference: {fileID: 0}
     - target: {fileID: 5167205520529337871, guid: 8d858fd9d27198b4c90a9bf3293a2701, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1e-45
+      value: -1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 6473634302120615351, guid: 8d858fd9d27198b4c90a9bf3293a2701, type: 3}
       propertyPath: m_Priority
@@ -4925,7 +4988,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091554920}
-  m_LocalRotation: {x: 0.39468312, y: -0.000000012139958, z: 0.0000000052147877, w: 0.91881734}
+  m_LocalRotation: {x: 0.3946831, y: 0.000000024812469, z: -0.000000010658335, w: 0.91881734}
   m_LocalPosition: {x: -0.0000009536743, y: 13.390001, z: -12.710003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5480,7 +5543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7738061307079428656, guid: 92fa74851adc3488db1b206ec612b293, type: 3}
       propertyPath: m_Name
-      value: Noise Trap
+      value: NoiseTrap
       objectReference: {fileID: 0}
     - target: {fileID: 7738061307079428661, guid: 92fa74851adc3488db1b206ec612b293, type: 3}
       propertyPath: m_RootOrder
